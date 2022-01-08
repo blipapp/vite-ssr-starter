@@ -1,38 +1,7 @@
 {
-  "name": "vite-ssr-starter",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "vite-ssr-starter-monorepo",
   "scripts": {
-    "dev": "node server",
-    "build": "npm run build:client && npm run build:server",
-    "build:client": "vite build --outDir dist/client",
-    "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server",
-    "generate": "vite build --outDir dist/static && npm run build:server && node prerender",
-    "serve": "cross-env NODE_ENV=production node server",
-    "debug": "node --inspect-brk server"
+    "dev": "pnpm run -r dev"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@chakra-ui/react": "^1.7.1",
-    "@emotion/react": "^11.6.0",
-    "@emotion/styled": "^11.6.0",
-    "compression": "^1.7.4",
-    "cross-env": "^7.0.3",
-    "express": "^4.17.1",
-    "framer-motion": "^5.3.0",
-    "react": "^18.0.0-alpha-a44a7a2a3-20211111",
-    "react-dom": "^18.0.0-alpha-a44a7a2a3-20211111",
-    "react-router-dom": "^6.0.2",
-    "serve-static": "^1.14.1"
-  },
-  "devDependencies": {
-    "@types/react": "^17.0.34",
-    "@types/react-dom": "^17.0.11",
-    "@vitejs/plugin-react": "^1.0.8",
-    "typescript": "^4.4.4",
-    "vite": "^2.6.14"
-  }
+  "private": true
 }

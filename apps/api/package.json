@@ -1,0 +1,19 @@
+{
+	"name": "api",
+	"scripts": {
+		"dev": "./build.js -watch -run",
+		"build": "./build.js"
+	},
+	"dependencies": {
+		"@envelop/core": "^1.7.0",
+		"@graphql-tools/schema": "^8.3.1",
+		"fastify": "^3.25.3",
+		"graphql": "^15.0.0",
+		"graphql-helix": "^1.11.0"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.8",
+		"esbuild-node-externals": "^1.4.1",
+		"estrella": "^1.4.1"
+	}
+}

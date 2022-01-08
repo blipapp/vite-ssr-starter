@@ -1,8 +1,10 @@
-import { createRoot } from "react-dom";
+import { Suspense } from "react";
+import { hydrateRoot } from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import { App } from "./App";
 
-createRoot(document.getElementById("app")!).render(
+hydrateRoot(
+  document.getElementById("root")!,
   <BrowserRouter>
     <App />
   </BrowserRouter>

@@ -1,0 +1,14 @@
+type Query {
+  hello: String!
+  greetings: [String!]
+  me: User!
+}
+type User {
+  id: ID!
+  name: String!
+  friends: [User!]!
+  bio: String!
+}
+type Subscription {
+  clock: String
+}
