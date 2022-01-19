@@ -66,6 +66,11 @@ app.route({
   method: ["GET", "POST"],
   url: "/api/graphql",
   async handler(req, res) {
+    // Artificially slow down responses:
+    await new Promise((resolve) => {
+      setTimeout(resolve, 1000);
+    });
+
     const { parse, validate, contextFactory, execute, schema } = getEnveloped({
       req,
     });

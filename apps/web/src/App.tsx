@@ -6,7 +6,6 @@ import { Suspense } from "react";
 import { RelayEnvironmentProvider } from "react-relay";
 import { useState } from "react";
 import { createEnvironment } from "./environment";
-import { HelmetProvider } from "react-helmet-async";
 import { ChakraProvider } from "@chakra-ui/react";
 
 export function App({ environment, helmetContext = {} }) {

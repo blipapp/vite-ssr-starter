@@ -51,5 +51,5 @@ export function createEnvironment({
 
   const environment = new Environment({ network, store });
 
-  return { environment, source };
+  return environment;
 }

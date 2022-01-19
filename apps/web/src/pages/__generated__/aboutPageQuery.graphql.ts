@@ -1,30 +1,26 @@
+/**
+ * @generated SignedSource<<a6c0da3f09fe1f1a297d0dd5bc42c121>>
+ * @lightSyntaxTransform
+ * @nogrep
+ */
+
 /* tslint:disable */
 /* eslint-disable */
 // @ts-nocheck
 
-import { ConcreteRequest } from "relay-runtime";
-
-export type AboutQueryVariables = {};
-export type AboutQueryResponse = {
-    readonly me: {
-        readonly name: string;
-    };
+import { ConcreteRequest, Query } from 'relay-runtime';
+export type aboutPageQuery$variables = {};
+export type aboutPageQueryVariables = aboutPageQuery$variables;
+export type aboutPageQuery$data = {
+  readonly me: {
+    readonly name: string;
+  };
 };
-export type AboutQuery = {
-    readonly response: AboutQueryResponse;
-    readonly variables: AboutQueryVariables;
+export type aboutPageQueryResponse = aboutPageQuery$data;
+export type aboutPageQuery = {
+  variables: aboutPageQueryVariables;
+  response: aboutPageQuery$data;
 };
-
-
-
-/*
-query AboutQuery {
-  me {
-    name
-    id
-  }
-}
-*/
 
 const node: ConcreteRequest = (function(){
 var v0 = {
@@ -39,7 +35,7 @@ return {
     "argumentDefinitions": [],
     "kind": "Fragment",
     "metadata": null,
-    "name": "AboutQuery",
+    "name": "aboutPageQuery",
     "selections": [
       {
         "alias": null,
@@ -61,7 +57,7 @@ return {
   "operation": {
     "argumentDefinitions": [],
     "kind": "Operation",
-    "name": "AboutQuery",
+    "name": "aboutPageQuery",
     "selections": [
       {
         "alias": null,
@@ -85,14 +81,16 @@ return {
     ]
   },
   "params": {
-    "cacheID": "0f8076e7a40ab4df0a8d88784c61f384",
+    "cacheID": "ebaadce16f765ca135ece73530fd90b7",
     "id": null,
     "metadata": {},
-    "name": "AboutQuery",
+    "name": "aboutPageQuery",
     "operationKind": "query",
-    "text": "query AboutQuery {\n  me {\n    name\n    id\n  }\n}\n"
+    "text": "query aboutPageQuery {\n  me {\n    name\n    id\n  }\n}\n"
   }
 };
 })();
-(node as any).hash = 'bae81cd87fca5296eeff4174eeea70a3';
+
+(node as any).hash = "e607a54ece225ce5415065f0f3d69d9d";
+
 export default node;
